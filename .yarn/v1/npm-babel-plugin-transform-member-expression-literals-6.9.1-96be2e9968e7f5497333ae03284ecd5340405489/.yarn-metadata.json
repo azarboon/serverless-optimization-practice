@@ -1,0 +1,38 @@
+{
+  "manifest": {
+    "name": "babel-plugin-transform-member-expression-literals",
+    "version": "6.9.1",
+    "description": "Turn valid member expression property literals into plain identifiers",
+    "keywords": [
+      "babel-plugin"
+    ],
+    "homepage": "https://github.com/babel/minify#readme",
+    "bugs": {
+      "url": "https://github.com/babel/minify/issues"
+    },
+    "license": "MIT",
+    "author": {
+      "name": "amasad"
+    },
+    "main": "lib/index.js",
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/babel/minify/tree/master/packages/babel-plugin-transform-member-expression-literals"
+    },
+    "_registry": "npm",
+    "_loc": "/Users/mahdi.azarboon/Documents/dev-unsynced/optimization-practice/.yarn/v1/npm-babel-plugin-transform-member-expression-literals-6.9.1-96be2e9968e7f5497333ae03284ecd5340405489/package.json",
+    "readmeFilename": "README.md",
+    "readme": "# babel-plugin-transform-member-expression-literals\n\nTurn valid member expression property literals into plain identifiers\n\n## Example\n\n**In**\n\n```javascript\nobj[\"foo\"] = \"isValid\";\n\nobj.const = \"isKeyword\";\nobj[\"var\"] = \"isKeyword\";\n```\n\n**Out**\n\n```javascript\nobj.foo = \"isValid\";\n\nobj[\"const\"] = \"isKeyword\";\nobj[\"var\"] = \"isKeyword\";\n```\n\n## Installation\n\n```sh\nnpm install babel-plugin-transform-member-expression-literals\n```\n\n## Usage\n\n### Via `.babelrc` (Recommended)\n\n**.babelrc**\n\n```json\n{\n  \"plugins\": [\"transform-member-expression-literals\"]\n}\n```\n\n### Via CLI\n\n```sh\nbabel --plugins transform-member-expression-literals script.js\n```\n\n### Via Node API\n\n```javascript\nrequire(\"@babel/core\").transform(\"code\", {\n  plugins: [\"transform-member-expression-literals\"]\n});\n```\n"
+  },
+  "artifacts": [],
+  "remote": {
+    "resolved": "https://registry.yarnpkg.com/babel-plugin-transform-member-expression-literals/-/babel-plugin-transform-member-expression-literals-6.9.1.tgz#96be2e9968e7f5497333ae03284ecd5340405489",
+    "type": "tarball",
+    "reference": "https://registry.yarnpkg.com/babel-plugin-transform-member-expression-literals/-/babel-plugin-transform-member-expression-literals-6.9.1.tgz",
+    "hash": "96be2e9968e7f5497333ae03284ecd5340405489",
+    "registry": "npm",
+    "packageName": "babel-plugin-transform-member-expression-literals"
+  },
+  "registry": "npm",
+  "hash": "96be2e9968e7f5497333ae03284ecd5340405489"
+}

@@ -1,0 +1,38 @@
+{
+  "manifest": {
+    "name": "babel-plugin-transform-remove-console",
+    "version": "6.9.1",
+    "description": "Remove all console.* calls.",
+    "keywords": [
+      "babel-plugin"
+    ],
+    "homepage": "https://github.com/babel/minify#readme",
+    "bugs": {
+      "url": "https://github.com/babel/minify/issues"
+    },
+    "license": "MIT",
+    "author": {
+      "name": "amasad"
+    },
+    "main": "lib/index.js",
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/babel/minify/tree/master/packages/babel-plugin-transform-remove-console"
+    },
+    "_registry": "npm",
+    "_loc": "/Users/mahdi.azarboon/Documents/dev-unsynced/optimization-practice/.yarn/v1/npm-babel-plugin-transform-remove-console-6.9.1-40fe95d98cae5811d8a0e1889812d78b12859651/package.json",
+    "readmeFilename": "README.md",
+    "readme": "# babel-plugin-transform-remove-console\n\nThis plugin removes all `console.*` calls.\n\n## Example\n\n**In**\n\n```javascript\nconsole.log(\"foo\");\nconsole.error(\"bar\");\n```\n\n**Out**\n\n```javascript\n```\n\n## Installation\n\n```sh\nnpm install babel-plugin-transform-remove-console\n```\n\n## Usage\n\n### Via `.babelrc` (Recommended)\n\n**.babelrc**\n\n```json\n// without options\n{\n  \"plugins\": [\"transform-remove-console\"]\n}\n```\n\n```json\n// with options\n{\n  \"plugins\": [ [\"transform-remove-console\", { \"exclude\": [ \"error\", \"warn\"] }] ]\n}\n```\n\n### Via CLI\n\n```sh\nbabel --plugins transform-remove-console script.js\n```\n\n### Via Node API\n\n```javascript\nrequire(\"@babel/core\").transform(\"code\", {\n  plugins: [\"transform-remove-console\"]\n});\n```\n\n## Options\n\n+ `exclude` - An array of console methods to exclude from removal.\n"
+  },
+  "artifacts": [],
+  "remote": {
+    "resolved": "https://registry.yarnpkg.com/babel-plugin-transform-remove-console/-/babel-plugin-transform-remove-console-6.9.1.tgz#40fe95d98cae5811d8a0e1889812d78b12859651",
+    "type": "tarball",
+    "reference": "https://registry.yarnpkg.com/babel-plugin-transform-remove-console/-/babel-plugin-transform-remove-console-6.9.1.tgz",
+    "hash": "40fe95d98cae5811d8a0e1889812d78b12859651",
+    "registry": "npm",
+    "packageName": "babel-plugin-transform-remove-console"
+  },
+  "registry": "npm",
+  "hash": "40fe95d98cae5811d8a0e1889812d78b12859651"
+}

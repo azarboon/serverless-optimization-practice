@@ -1,0 +1,38 @@
+service: optimization-practices
+
+# use aws-lambda-power-tuning to find optimum RAM
+frameworkVersion: ">=1.1.0 <2.0.0"
+
+provider:
+  name: aws
+  runtime: nodejs8.10
+  region: eu-central-1
+  stage: ${opt:stage, self:custom.defaultStage}
+  stackTags:
+    purpose: try_and_error
+
+package:
+  individually: true
+
+custom:
+  defaultStage: dev
+  webpack:
+    webpackConfig: ./webpack.config.js
+    includeModules: true
+    # should add packager if not npm
+    packager: 'yarn'
+
+# IMPORTANT: define separate handler files to optimize the package size
+functions:
+  one:
+    handler: handler1.endpoint1
+    events:
+      - http: GET one
+  two:
+    handler: handler2.endpoint2
+    events:
+      - http: GET two
+
+plugins:
+  - serverless-offline
+  - serverless-webpack

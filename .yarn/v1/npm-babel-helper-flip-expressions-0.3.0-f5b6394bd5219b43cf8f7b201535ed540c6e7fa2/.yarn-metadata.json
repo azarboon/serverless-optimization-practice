@@ -1,0 +1,38 @@
+{
+  "manifest": {
+    "name": "babel-helper-flip-expressions",
+    "version": "0.3.0",
+    "description": "## Installation",
+    "keywords": [
+      "babel-plugin"
+    ],
+    "homepage": "https://github.com/babel/minify#readme",
+    "bugs": {
+      "url": "https://github.com/babel/minify/issues"
+    },
+    "license": "MIT",
+    "author": {
+      "name": "amasad"
+    },
+    "main": "lib/index.js",
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/babel/minify/tree/master/packages/babel-helper-flip-expressions"
+    },
+    "_registry": "npm",
+    "_loc": "/Users/mahdi.azarboon/Documents/dev-unsynced/optimization-practice/.yarn/v1/npm-babel-helper-flip-expressions-0.3.0-f5b6394bd5219b43cf8f7b201535ed540c6e7fa2/package.json",
+    "readmeFilename": "README.md",
+    "readme": "# babel-helper-flip-expressions\n\n## Installation\n\n```sh\nnpm install babel-helper-flip-expressions\n```\n"
+  },
+  "artifacts": [],
+  "remote": {
+    "resolved": "https://registry.yarnpkg.com/babel-helper-flip-expressions/-/babel-helper-flip-expressions-0.3.0.tgz#f5b6394bd5219b43cf8f7b201535ed540c6e7fa2",
+    "type": "tarball",
+    "reference": "https://registry.yarnpkg.com/babel-helper-flip-expressions/-/babel-helper-flip-expressions-0.3.0.tgz",
+    "hash": "f5b6394bd5219b43cf8f7b201535ed540c6e7fa2",
+    "registry": "npm",
+    "packageName": "babel-helper-flip-expressions"
+  },
+  "registry": "npm",
+  "hash": "f5b6394bd5219b43cf8f7b201535ed540c6e7fa2"
+}

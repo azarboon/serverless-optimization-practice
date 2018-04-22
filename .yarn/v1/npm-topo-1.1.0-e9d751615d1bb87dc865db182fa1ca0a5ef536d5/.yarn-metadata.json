@@ -1,0 +1,49 @@
+{
+  "manifest": {
+    "name": "topo",
+    "description": "Topological sorting with grouping support",
+    "version": "1.1.0",
+    "repository": {
+      "type": "git",
+      "url": "git://github.com/hapijs/topo"
+    },
+    "main": "lib/index.js",
+    "keywords": [
+      "topological",
+      "sort",
+      "toposort",
+      "topsort"
+    ],
+    "engines": {
+      "node": ">=0.10.40"
+    },
+    "dependencies": {
+      "hoek": "2.x.x"
+    },
+    "devDependencies": {
+      "lab": "6.x.x",
+      "code": "1.x.x"
+    },
+    "scripts": {
+      "test": "lab -a code -t 100 -L",
+      "test-cov-html": "lab -a code -t 100 -L -r html -o coverage.html"
+    },
+    "license": "BSD-3-Clause",
+    "_registry": "npm",
+    "_loc": "/Users/mahdi.azarboon/Documents/dev-unsynced/optimization-practice/.yarn/v1/npm-topo-1.1.0-e9d751615d1bb87dc865db182fa1ca0a5ef536d5/package.json",
+    "readmeFilename": "README.md",
+    "readme": "# topo\n\nTopological sorting with grouping support.\n\n[![Build Status](https://secure.travis-ci.org/hapijs/topo.png)](http://travis-ci.org/hapijs/topo)\n\nLead Maintainer: [Devin Ivy](https://github.com/devinivy)\n\n## Usage\n\nSee the [API Reference](API.md)\n\n**Example**\n```node\nvar Topo = require('topo');\n\nvar morning = new Topo();\n\nmorning.add('Nap', { after: ['breakfast', 'prep'] });\n\nmorning.add([\n    'Make toast',\n    'Pour juice'\n], { before: 'breakfast', group: 'prep' });\n\nmorning.add('Eat breakfast', { group: 'breakfast' });\n\nmorning.nodes;        // ['Make toast', 'Pour juice', 'Eat breakfast', 'Nap']\n```\n",
+    "licenseText": "Copyright (c) 2012-2014, Walmart and other contributors.\nAll rights reserved.\n\nRedistribution and use in source and binary forms, with or without\nmodification, are permitted provided that the following conditions are met:\n    * Redistributions of source code must retain the above copyright\n      notice, this list of conditions and the following disclaimer.\n    * Redistributions in binary form must reproduce the above copyright\n      notice, this list of conditions and the following disclaimer in the\n      documentation and/or other materials provided with the distribution.\n    * The names of any contributors may not be used to endorse or promote\n      products derived from this software without specific prior written\n      permission.\n\nTHIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS \"AS IS\" AND\nANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED\nWARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE\nDISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDERS AND CONTRIBUTORS BE LIABLE FOR ANY\nDIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES\n(INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;\nLOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND\nON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT\n(INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS\nSOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.\n\n                                  *   *   *\n\nThe complete list of contributors can be found at: https://github.com/hapijs/topo/graphs/contributors"
+  },
+  "artifacts": [],
+  "remote": {
+    "resolved": "https://registry.yarnpkg.com/topo/-/topo-1.1.0.tgz#e9d751615d1bb87dc865db182fa1ca0a5ef536d5",
+    "type": "tarball",
+    "reference": "https://registry.yarnpkg.com/topo/-/topo-1.1.0.tgz",
+    "hash": "e9d751615d1bb87dc865db182fa1ca0a5ef536d5",
+    "registry": "npm",
+    "packageName": "topo"
+  },
+  "registry": "npm",
+  "hash": "e9d751615d1bb87dc865db182fa1ca0a5ef536d5"
+}

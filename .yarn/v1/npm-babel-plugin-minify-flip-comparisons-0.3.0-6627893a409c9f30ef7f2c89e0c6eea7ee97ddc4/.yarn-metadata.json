@@ -1,0 +1,41 @@
+{
+  "manifest": {
+    "name": "babel-plugin-minify-flip-comparisons",
+    "version": "0.3.0",
+    "description": "**Note:** while this plugin doesn’t shorten the output in any way, it does optimize it for repetition-based compression algorithms such as gzip.",
+    "keywords": [
+      "babel-plugin"
+    ],
+    "homepage": "https://github.com/babel/minify#readme",
+    "bugs": {
+      "url": "https://github.com/babel/minify/issues"
+    },
+    "license": "MIT",
+    "author": {
+      "name": "amasad"
+    },
+    "main": "lib/index.js",
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/babel/minify/tree/master/packages/babel-plugin-minify-flip-comparisons"
+    },
+    "dependencies": {
+      "babel-helper-is-void-0": "^0.3.0"
+    },
+    "_registry": "npm",
+    "_loc": "/Users/mahdi.azarboon/Documents/dev-unsynced/optimization-practice/.yarn/v1/npm-babel-plugin-minify-flip-comparisons-0.3.0-6627893a409c9f30ef7f2c89e0c6eea7ee97ddc4/package.json",
+    "readmeFilename": "README.md",
+    "readme": "# babel-plugin-minify-flip-comparisons\n\n**Note:** while this plugin doesn’t shorten the output in any way, it does optimize it for repetition-based compression algorithms such as gzip.\n\n## Example\n\n**In**\n\n```javascript\nconst foo = a === 1;\nif (bar !== null) {\n  var baz = 0;\n}\n```\n\n**Out**\n\n```javascript\nconst foo = 1 === a;\nif (null !== bar) {\n  var baz = 0;\n}\n```\n\n## Installation\n\n```sh\nnpm install babel-plugin-minify-flip-comparisons\n```\n\n## Usage\n\n### Via `.babelrc` (Recommended)\n\n**.babelrc**\n\n```json\n{\n  \"plugins\": [\"minify-flip-comparisons\"]\n}\n```\n\n### Via CLI\n\n```sh\nbabel --plugins minify-flip-comparisons script.js\n```\n\n### Via Node API\n\n```javascript\nrequire(\"babel-core\").transform(\"code\", {\n  plugins: [\"minify-flip-comparisons\"]\n});\n```\n"
+  },
+  "artifacts": [],
+  "remote": {
+    "resolved": "https://registry.yarnpkg.com/babel-plugin-minify-flip-comparisons/-/babel-plugin-minify-flip-comparisons-0.3.0.tgz#6627893a409c9f30ef7f2c89e0c6eea7ee97ddc4",
+    "type": "tarball",
+    "reference": "https://registry.yarnpkg.com/babel-plugin-minify-flip-comparisons/-/babel-plugin-minify-flip-comparisons-0.3.0.tgz",
+    "hash": "6627893a409c9f30ef7f2c89e0c6eea7ee97ddc4",
+    "registry": "npm",
+    "packageName": "babel-plugin-minify-flip-comparisons"
+  },
+  "registry": "npm",
+  "hash": "6627893a409c9f30ef7f2c89e0c6eea7ee97ddc4"
+}

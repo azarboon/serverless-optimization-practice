@@ -1,0 +1,38 @@
+{
+  "manifest": {
+    "name": "babel-helper-is-void-0",
+    "version": "0.3.0",
+    "description": "## Installation",
+    "keywords": [
+      "babel-plugin"
+    ],
+    "homepage": "https://github.com/babel/minify#readme",
+    "bugs": {
+      "url": "https://github.com/babel/minify/issues"
+    },
+    "license": "MIT",
+    "author": {
+      "name": "amasad"
+    },
+    "main": "lib/index.js",
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/babel/minify/tree/master/packages/babel-helper-is-void-0"
+    },
+    "_registry": "npm",
+    "_loc": "/Users/mahdi.azarboon/Documents/dev-unsynced/optimization-practice/.yarn/v1/npm-babel-helper-is-void-0-0.3.0-95570d20bd27b2206f68083ae9980ee7003d8fe7/package.json",
+    "readmeFilename": "README.md",
+    "readme": "# babel-helper-is-void-0\n\n## Installation\n\n```sh\nnpm install babel-helper-is-void-0\n```\n"
+  },
+  "artifacts": [],
+  "remote": {
+    "resolved": "https://registry.yarnpkg.com/babel-helper-is-void-0/-/babel-helper-is-void-0-0.3.0.tgz#95570d20bd27b2206f68083ae9980ee7003d8fe7",
+    "type": "tarball",
+    "reference": "https://registry.yarnpkg.com/babel-helper-is-void-0/-/babel-helper-is-void-0-0.3.0.tgz",
+    "hash": "95570d20bd27b2206f68083ae9980ee7003d8fe7",
+    "registry": "npm",
+    "packageName": "babel-helper-is-void-0"
+  },
+  "registry": "npm",
+  "hash": "95570d20bd27b2206f68083ae9980ee7003d8fe7"
+}

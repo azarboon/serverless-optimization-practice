@@ -1,0 +1,39 @@
+{
+  "manifest": {
+    "name": "babel-helper-evaluate-path",
+    "version": "0.3.0",
+    "description": "path.evaluate wrapped in a try catch",
+    "keywords": [
+      "babel-minify",
+      "babel-plugin"
+    ],
+    "homepage": "https://github.com/babel/minify#readme",
+    "bugs": {
+      "url": "https://github.com/babel/minify/issues"
+    },
+    "license": "MIT",
+    "author": {
+      "name": "boopathi"
+    },
+    "main": "lib/index.js",
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/babel/minify/tree/master/packages/babel-helper-evaluate-path"
+    },
+    "_registry": "npm",
+    "_loc": "/Users/mahdi.azarboon/Documents/dev-unsynced/optimization-practice/.yarn/v1/npm-babel-helper-evaluate-path-0.3.0-2439545e0b6eae5b7f49b790acbebd6b9a73df20/package.json",
+    "readmeFilename": "README.md",
+    "readme": "# babel-helper-evaluate-path\n\nA wrapper for babel's `path.evaluate`\n\nFixes / Features:\n\n+ Detect usages before initialization / declaration\n\n```js\nfunction foo() {\n  console.log(b); // ReferenceError\n  let b = 1;\n}\n\nfunction bar() {\n  console.log(a); // a is void 0\n  var a = 5;\n  console.log(a); // 5\n}\n```\n\n+ Detect usages in scopes outside of initialization for vars (hoisted)\n\n```js\nfunction foo() {\n  if (a) var x = 5;\n  console.log(x); // cannot determine\n}\n```\n\n## Installation\n\n```sh\nnpm install babel-helper-evaluate-path\n```\n"
+  },
+  "artifacts": [],
+  "remote": {
+    "resolved": "https://registry.yarnpkg.com/babel-helper-evaluate-path/-/babel-helper-evaluate-path-0.3.0.tgz#2439545e0b6eae5b7f49b790acbebd6b9a73df20",
+    "type": "tarball",
+    "reference": "https://registry.yarnpkg.com/babel-helper-evaluate-path/-/babel-helper-evaluate-path-0.3.0.tgz",
+    "hash": "2439545e0b6eae5b7f49b790acbebd6b9a73df20",
+    "registry": "npm",
+    "packageName": "babel-helper-evaluate-path"
+  },
+  "registry": "npm",
+  "hash": "2439545e0b6eae5b7f49b790acbebd6b9a73df20"
+}

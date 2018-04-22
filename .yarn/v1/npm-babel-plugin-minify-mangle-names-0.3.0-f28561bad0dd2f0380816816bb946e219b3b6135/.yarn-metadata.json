@@ -1,0 +1,41 @@
+{
+  "manifest": {
+    "name": "babel-plugin-minify-mangle-names",
+    "version": "0.3.0",
+    "description": "Context- and scope- aware variable renaming.",
+    "keywords": [
+      "babel-plugin"
+    ],
+    "homepage": "https://github.com/babel/minify#readme",
+    "bugs": {
+      "url": "https://github.com/babel/minify/issues"
+    },
+    "license": "MIT",
+    "author": {
+      "name": "amasad"
+    },
+    "main": "lib/index.js",
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/babel/minify/tree/master/packages/babel-plugin-minify-mangle-names"
+    },
+    "dependencies": {
+      "babel-helper-mark-eval-scopes": "^0.3.0"
+    },
+    "_registry": "npm",
+    "_loc": "/Users/mahdi.azarboon/Documents/dev-unsynced/optimization-practice/.yarn/v1/npm-babel-plugin-minify-mangle-names-0.3.0-f28561bad0dd2f0380816816bb946e219b3b6135/package.json",
+    "readmeFilename": "README.md",
+    "readme": "# babel-plugin-minify-mangle-names\n\nContext- and scope- aware variable renaming.\n\n## Example\n\n**In**\n\n```javascript\nvar globalVariableName = 42;\nfunction foo() {\n  var longLocalVariableName = 1;\n  if (longLocalVariableName) {\n    console.log(longLocalVariableName);\n  }\n}\n```\n\n**Out**\n\n```javascript\nvar globalVariableName = 42;\nfunction foo() {\n  var a = 1;\n  if (a) {\n    console.log(a);\n  }\n}\n```\n\n## Installation\n\n```sh\nnpm install babel-plugin-minify-mangle-names\n```\n\n## Usage\n\n### Via `.babelrc` (Recommended)\n\n**.babelrc**\n\n```json\n// without options\n{\n  \"plugins\": [\"minify-mangle-names\"]\n}\n```\n\n```json\n// with options\n{\n  \"plugins\": [\n    [\"minify-mangle-names\", { \"exclude\": { \"foo\": true, \"bar\": true} }]\n  ]\n}\n```\n\n### Via CLI\n\n```sh\nbabel --plugins minify-mangle-names script.js\n```\n\n### Via Node API\n\n```javascript\nrequire(\"babel-core\").transform(\"code\", {\n  plugins: [\"minify-mangle-names\"]\n});\n```\n\n## Options\n\n+ `exclude` - A plain JS Object with keys as identifier names and values indicating whether to exclude (default: `{}`)\n+ `eval` - mangle identifiers in scopes accessible by eval (default: `false`)\n+ `keepFnName` - prevent mangler from altering function names. Useful for code depending on `fn.name` (default: `false`)\n+ `topLevel` - mangle topLevel Identifiers (default: `false`)\n+ `keepClassName` - prevent mangler from altering class names (default: `false`).\n"
+  },
+  "artifacts": [],
+  "remote": {
+    "resolved": "https://registry.yarnpkg.com/babel-plugin-minify-mangle-names/-/babel-plugin-minify-mangle-names-0.3.0.tgz#f28561bad0dd2f0380816816bb946e219b3b6135",
+    "type": "tarball",
+    "reference": "https://registry.yarnpkg.com/babel-plugin-minify-mangle-names/-/babel-plugin-minify-mangle-names-0.3.0.tgz",
+    "hash": "f28561bad0dd2f0380816816bb946e219b3b6135",
+    "registry": "npm",
+    "packageName": "babel-plugin-minify-mangle-names"
+  },
+  "registry": "npm",
+  "hash": "f28561bad0dd2f0380816816bb946e219b3b6135"
+}

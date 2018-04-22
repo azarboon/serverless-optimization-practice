@@ -1,0 +1,52 @@
+{
+  "manifest": {
+    "name": "babel-minify",
+    "version": "0.4.0",
+    "description": "✂️ An ES6+ aware minifier based on the Babel toolchain (beta)",
+    "keywords": [
+      "babel-minify",
+      "babel-preset",
+      "minify"
+    ],
+    "homepage": "https://github.com/babel/minify#readme",
+    "bugs": {
+      "url": "https://github.com/babel/minify/issues"
+    },
+    "license": "MIT",
+    "author": {
+      "name": "amasad"
+    },
+    "main": "lib/index.js",
+    "bin": {
+      "babel-minify": "./bin/minify.js",
+      "minify": "./bin/minify.js"
+    },
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/babel/minify/tree/master/packages/babel-minify"
+    },
+    "dependencies": {
+      "@babel/core": "^7.0.0-beta.40",
+      "babel-preset-minify": "^0.4.0",
+      "fs-readdir-recursive": "^1.1.0",
+      "mkdirp": "^0.5.1",
+      "util.promisify": "^1.0.0",
+      "yargs-parser": "^9.0.2"
+    },
+    "_registry": "npm",
+    "_loc": "/Users/mahdi.azarboon/Documents/dev-unsynced/optimization-practice/.yarn/v1/npm-babel-minify-0.4.0-c3da754336ac1b1b2b8e0f438adcc788b43c934b/package.json",
+    "readmeFilename": "README.md",
+    "readme": "# babel-minify\n\nNode API and CLI\n\n[![npm](https://img.shields.io/npm/v/babel-minify.svg?maxAge=2592000)](https://www.npmjs.com/package/babel-minify)\n\nUse `babel-minify` if you don't already use babel (as a preset) or want to run it standalone.\n\n## Installation\n\n```sh\nnpm install babel-minify --save-dev\n```\n\n## Usage\n\n### Node API\n\n```js\nconst minify = require(\"babel-minify\");\n\nconst {code, map} = minify(\"input code\", {\n  mangle: {\n    keepClassName: true\n  }\n});\n```\n\n### CLI\n\n```sh\nminify input.js --out-file input.min.js --mangle.keepClassName\n```\n\n## Node API\n\n```js\nconst minify = require(\"babel-minify\");\n\nminify(input, minifyOptions, overrides)\n```\n\n### minifyOptions\n\nRefer [babel-preset-minify options](https://github.com/babel/minify/tree/master/packages/babel-preset-minify#options)\n\n### overrides\n\n+ `babel`: Custom babel\n+ `minifyPreset`: Custom minify preset\n+ `inputSourceMap`: Input Sourcemap\n+ `sourceMaps`: [Boolean]\n\n## CLI Options\n\n```\nminify input.js [options]\n```\n\n### Simple preset options\n\nFor simple options, use `--optionName` in CLI\n\nRefer [preset's 1-1 options](https://github.com/babel/minify/tree/master/packages/babel-preset-minify#1-1-mapping-with-plugin) for the list of options\n\nExample:\n\n```\nminify input.js --mangle false\n```\n\n### Nested preset options\n\nUsage: `--optionName.featureName`\n\nExample:\n\n```sh\nminify input.js --mangle.keepClassName --deadcode.keepFnArgs --outFile input.min.js\n```\n\nRefer the corresponding plugins to know the list of options it takes\n\n### IO options\n\n+ `--out-file path/to/file.min.js`: Output filename. Used only when reading from STDIN / a single input file\n+ `--out-dir path/to/dir`: Output Directory.\n"
+  },
+  "artifacts": [],
+  "remote": {
+    "resolved": "https://registry.yarnpkg.com/babel-minify/-/babel-minify-0.4.0.tgz#c3da754336ac1b1b2b8e0f438adcc788b43c934b",
+    "type": "tarball",
+    "reference": "https://registry.yarnpkg.com/babel-minify/-/babel-minify-0.4.0.tgz",
+    "hash": "c3da754336ac1b1b2b8e0f438adcc788b43c934b",
+    "registry": "npm",
+    "packageName": "babel-minify"
+  },
+  "registry": "npm",
+  "hash": "c3da754336ac1b1b2b8e0f438adcc788b43c934b"
+}

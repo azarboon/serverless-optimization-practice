@@ -1,0 +1,41 @@
+{
+  "manifest": {
+    "name": "@babel/helpers",
+    "version": "7.0.0-beta.44",
+    "description": "Collection of helper functions used by Babel transforms.",
+    "author": {
+      "name": "Sebastian McKenzie",
+      "email": "sebmck@gmail.com"
+    },
+    "homepage": "https://babeljs.io/",
+    "license": "MIT",
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/babel/babel/tree/master/packages/babel-helpers"
+    },
+    "main": "lib/index.js",
+    "dependencies": {
+      "@babel/template": "7.0.0-beta.44",
+      "@babel/traverse": "7.0.0-beta.44",
+      "@babel/types": "7.0.0-beta.44"
+    },
+    "devDependencies": {
+      "@babel/helper-plugin-test-runner": "7.0.0-beta.44"
+    },
+    "_registry": "npm",
+    "_loc": "/Users/mahdi.azarboon/Documents/dev-unsynced/optimization-practice/.yarn/v1/npm-@babel/helpers-7.0.0-beta.44-b1cc87fdc3b77351c0a4860bcd9d4ef457919bfd/package.json",
+    "readmeFilename": "README.md",
+    "readme": "# @babel/helpers\n\n> Collection of helper functions used by Babel transforms.\n\n## Install\n\n```sh\nnpm install --save-dev @babel/helpers\n```\n\n## Usage\n\nDirect:\n\n```js\nimport * as helpers from '@babel/helpers';\nimport * as t from '@babel/types';\n\nconst typeofHelper = helpers.get('typeof');\n\nt.isExpressionStatement(typeofHelper);\n// true\n```\n\nInside a plugin:\n\n```js\nexport default {\n  visitor: {\n    UnaryExpression(path) {\n      // The .addHelper function adds, if needed, the helper to the file\n      // and returns an expression which references the helper\n      const typeofHelper = this.addHelper(\"typeof\");\n      t.isExpression(typeofHelper); // true\n  }\n};\n```\n\n## Defining Helpers\n\n> **NOTE**: This package is only meant to be used by the packages inluded in this repository. There is currently no way for third-party plugins to define an helper.\n\nHelpers are defined in the `src/helpers.js` file, and they must be valid modules which follow these guidelines:\n - They must have a default export, which is their entry-point.\n - They can import other helpers, exclusively by using default imports.\n - They can't have named exports.\n\n```js\nhelpers.customHelper = defineHelper(`\n  import dep from \"dependency\";\n  const foo = 2;\n  export default function getFooTimesDepPlusX(x) {\n    return foo * dep() + x;\n  }\n`);\n```\n"
+  },
+  "artifacts": [],
+  "remote": {
+    "resolved": "https://registry.yarnpkg.com/@babel/helpers/-/helpers-7.0.0-beta.44.tgz#b1cc87fdc3b77351c0a4860bcd9d4ef457919bfd",
+    "type": "tarball",
+    "reference": "https://registry.yarnpkg.com/@babel/helpers/-/helpers-7.0.0-beta.44.tgz",
+    "hash": "b1cc87fdc3b77351c0a4860bcd9d4ef457919bfd",
+    "registry": "npm",
+    "packageName": "@babel/helpers"
+  },
+  "registry": "npm",
+  "hash": "b1cc87fdc3b77351c0a4860bcd9d4ef457919bfd"
+}

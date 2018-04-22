@@ -1,0 +1,48 @@
+{
+  "manifest": {
+    "name": "b64",
+    "description": "Base64 streaming encoder and decoder",
+    "version": "3.0.3",
+    "repository": {
+      "type": "git",
+      "url": "git://github.com/hapijs/b64"
+    },
+    "main": "lib/index.js",
+    "keywords": [
+      "buffer",
+      "base64",
+      "decode",
+      "encode",
+      "stream"
+    ],
+    "engines": {
+      "node": ">=4.0.0"
+    },
+    "dependencies": {},
+    "devDependencies": {
+      "lab": "14.x.x",
+      "wreck": "12.x.x"
+    },
+    "scripts": {
+      "test": "lab -a code -t 100 -L",
+      "test-cov-html": "lab -a code -r html -o coverage.html"
+    },
+    "license": "BSD-3-Clause",
+    "_registry": "npm",
+    "_loc": "/Users/mahdi.azarboon/Documents/dev-unsynced/optimization-practice/.yarn/v1/npm-b64-3.0.3-36afeee0d9345f046387ce6de8a6702afe5bb56e/package.json",
+    "readmeFilename": "README.md",
+    "readme": "Base64 streaming encoder and decoder\n\n[![Build Status](https://secure.travis-ci.org/hapijs/b64.png)](http://travis-ci.org/hapijs/b64)\n\nLead Maintainer - [Wyatt Preul](https://github.com/geek)\n\n\n## Installation\n\n```sh\nnpm install b64 --save\n```\n\n\n## API\n\n### encode(buffer)\n\nBase64 encode the buffer and return it as a new Buffer.\n\n\n### decode(buffer)\n\nBase64 decode the buffer and return the result as a new buffer.\n\n\n### Encoder\n\nTransform stream that base64 encodes each chunk of the stream.\n\nExample:\n\n```js\n'use strict';\n\nconst Fs = require('fs');\nconst B64 = require('b64');\n\nconst stream = Fs.createReadStream(`${__dirname}/package.json`);\nconst encoder = new B64.Encoder();\n\nstream.pipe(encoder).pipe(process.stdout);\n```\n\n\n### Decoder\n\nTransform stream that base64 decodes each chunk of the stream.\n\nExample:\n\n```js\n'use strict';\n\nconst Fs = require('fs');\nconst B64 = require('b64');\n\nconst stream = Fs.createReadStream(`${__dirname}/encodedfile.b64`);\nconst decoder = new B64.Decoder();\n\nstream.pipe(decoder).pipe(process.stdout);\n```\n",
+    "licenseText": "Copyright (c) 2014-2017, Project contributors\nCopyright (c) 2014, Walmart\nCopyright (C) 1999, Masanao Izumo <iz@onicos.co.jp>\nAll rights reserved.\n\nRedistribution and use in source and binary forms, with or without\nmodification, are permitted provided that the following conditions are met:\n    * Redistributions of source code must retain the above copyright\n      notice, this list of conditions and the following disclaimer.\n    * Redistributions in binary form must reproduce the above copyright\n      notice, this list of conditions and the following disclaimer in the\n      documentation and/or other materials provided with the distribution.\n    * The names of any contributors may not be used to endorse or promote\n      products derived from this software without specific prior written\n      permission.\n\nTHIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS \"AS IS\" AND\nANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED\nWARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE\nDISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDERS AND CONTRIBUTORS BE LIABLE FOR ANY\nDIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES\n(INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;\nLOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND\nON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT\n(INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS\nSOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.\n\n                                  *   *   *\n\nThe complete list of contributors can be found at: https://github.com/hapijs/b64/graphs/contributors\n"
+  },
+  "artifacts": [],
+  "remote": {
+    "resolved": "https://registry.yarnpkg.com/b64/-/b64-3.0.3.tgz#36afeee0d9345f046387ce6de8a6702afe5bb56e",
+    "type": "tarball",
+    "reference": "https://registry.yarnpkg.com/b64/-/b64-3.0.3.tgz",
+    "hash": "36afeee0d9345f046387ce6de8a6702afe5bb56e",
+    "registry": "npm",
+    "packageName": "b64"
+  },
+  "registry": "npm",
+  "hash": "36afeee0d9345f046387ce6de8a6702afe5bb56e"
+}

@@ -1,0 +1,49 @@
+{
+  "manifest": {
+    "name": "catbox-memory",
+    "description": "Memory adapter for catbox",
+    "version": "2.0.4",
+    "repository": {
+      "type": "git",
+      "url": "git://github.com/hapijs/catbox-memory"
+    },
+    "main": "lib/index.js",
+    "keywords": [
+      "cache",
+      "catbox",
+      "memory"
+    ],
+    "engines": {
+      "node": ">=4.0.0"
+    },
+    "dependencies": {
+      "hoek": "4.x.x"
+    },
+    "devDependencies": {
+      "catbox": "7.x.x",
+      "code": "4.x.x",
+      "lab": "11.x.x"
+    },
+    "scripts": {
+      "test": "lab -a code -v -L -t 100",
+      "test-cov-html": "lab -a code -r html -o coverage.html"
+    },
+    "license": "BSD-3-Clause",
+    "_registry": "npm",
+    "_loc": "/Users/mahdi.azarboon/Documents/dev-unsynced/optimization-practice/.yarn/v1/npm-catbox-memory-2.0.4-433e255902caf54233d1286429c8f4df14e822d5/package.json",
+    "readmeFilename": "README.md",
+    "readme": "catbox-memory\n=============\n\nMemory adapter for [catbox](https://github.com/hapijs/catbox).\n\nLead Maintainer - [Wyatt Preul](https://github.com/geek)\n\nCurrent version: [![Current Version](https://img.shields.io/npm/v/catbox-memory.svg)](https://www.npmjs.org/package/catbox-memory) [![Build Status](https://api.travis-ci.org/hapijs/catbox-memory.svg)](https://travis-ci.org/hapijs/catbox-memory)\n\n### Options\n\n- `maxByteSize` - sets an upper limit on the number of bytes that can be stored in the\n  cache. Once this limit is reached no additional items will be added to the cache\n  until some expire. The utilized memory calculation is a rough approximation and must\n  not be relied on. Defaults to `104857600` (100MB).\n- `allowMixedContent` - by default, all data is cached as JSON strings, and converted\n  to an object using `JSON.parse()` on retrieval. By setting this option to `true`,\n  `Buffer` data can be stored alongside the stringified data. `Buffer`s are not\n  stringified, and are copied before storage to prevent the value from changing while\n  in the cache. Defaults to `false`.\n\nNote: the maximum allowed value for `ttl` is `2^31-1`, which is around 24.8 days.\n",
+    "licenseText": "Copyright (c) 2012-2016, Project contributors\nCopyright (c) 2012-2014, Walmart\nAll rights reserved.\n\nRedistribution and use in source and binary forms, with or without\nmodification, are permitted provided that the following conditions are met:\n    * Redistributions of source code must retain the above copyright\n      notice, this list of conditions and the following disclaimer.\n    * Redistributions in binary form must reproduce the above copyright\n      notice, this list of conditions and the following disclaimer in the\n      documentation and/or other materials provided with the distribution.\n    * The names of any contributors may not be used to endorse or promote\n      products derived from this software without specific prior written\n      permission.\n\nTHIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS \"AS IS\" AND\nANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED\nWARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE\nDISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDERS AND CONTRIBUTORS BE LIABLE FOR ANY\nDIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES\n(INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;\nLOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND\nON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT\n(INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS\nSOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.\n\n                                  *   *   *\n\nThe complete list of contributors can be found at: https://github.com/hapijs/catbox-memory/graphs/contributors\n"
+  },
+  "artifacts": [],
+  "remote": {
+    "resolved": "https://registry.yarnpkg.com/catbox-memory/-/catbox-memory-2.0.4.tgz#433e255902caf54233d1286429c8f4df14e822d5",
+    "type": "tarball",
+    "reference": "https://registry.yarnpkg.com/catbox-memory/-/catbox-memory-2.0.4.tgz",
+    "hash": "433e255902caf54233d1286429c8f4df14e822d5",
+    "registry": "npm",
+    "packageName": "catbox-memory"
+  },
+  "registry": "npm",
+  "hash": "433e255902caf54233d1286429c8f4df14e822d5"
+}

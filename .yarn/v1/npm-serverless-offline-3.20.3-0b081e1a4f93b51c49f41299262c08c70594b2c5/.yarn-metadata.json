@@ -1,0 +1,353 @@
+{
+  "manifest": {
+    "name": "serverless-offline",
+    "version": "3.20.3",
+    "description": "Emulate AWS λ and API Gateway locally when developing your Serverless project",
+    "main": "src/index.js",
+    "scripts": {
+      "test": "mocha test",
+      "lint": "eslint src/**/*.js test/**/*.js"
+    },
+    "repository": {
+      "type": "git",
+      "url": "git+https://github.com/dherault/serverless-offline.git"
+    },
+    "keywords": [
+      "Serverless",
+      "Amazon Web Services",
+      "AWS",
+      "Lambda",
+      "API Gateway"
+    ],
+    "author": {
+      "name": "David Hérault",
+      "email": "dherault@gmail.com",
+      "url": "https://github.com/dherault"
+    },
+    "maintainers": [
+      {
+        "name": "Bilal Soylu",
+        "url": "https://github.com/Bilal-S"
+      },
+      {
+        "name": "Leonardo Alifraco",
+        "url": "https://github.com/leonardoalifraco"
+      },
+      {
+        "name": "Michael Staub",
+        "url": "https://github.com/mikestaub"
+      },
+      {
+        "name": "Daniel Cottone",
+        "email": "daniel.cottone@gmail.com",
+        "url": "https://github.com/daniel-cottone"
+      }
+    ],
+    "contributors": [
+      {
+        "name": "Adam Sweeting",
+        "url": "https://github.com/adamelliottsweeting"
+      },
+      {
+        "name": "Adrien",
+        "url": "https://github.com/AdrienGiboire"
+      },
+      {
+        "name": "Al Pal",
+        "url": "https://github.com/againer"
+      },
+      {
+        "name": "allenhartwig",
+        "url": "https://github.com/allenhartwig"
+      },
+      {
+        "name": "Andre Rabold",
+        "url": "https://github.com/arabold"
+      },
+      {
+        "name": "Andrei Popovici",
+        "url": "https://github.com/andreipopovici"
+      },
+      {
+        "name": "Anthony Liatsis",
+        "url": "https://github.com/aliatsis"
+      },
+      {
+        "name": "Austen",
+        "url": "https://github.com/ac360"
+      },
+      {
+        "name": "Ayush Gupta",
+        "url": "https://github.com/AyushG3112"
+      },
+      {
+        "name": "Ben Cooling",
+        "url": "https://github.com/bencooling"
+      },
+      {
+        "name": "Cameron Cooper",
+        "url": "https://github.com/cameroncooper"
+      },
+      {
+        "name": "Chris Trevino",
+        "url": "https://github.com/darthtrevino"
+      },
+      {
+        "name": "Christoph Gysin",
+        "url": "https://github.com/christophgysin"
+      },
+      {
+        "name": "Daniel Parker",
+        "url": "https://github.com/rlgod"
+      },
+      {
+        "name": "Dave Sole",
+        "url": "https://github.com/dsole"
+      },
+      {
+        "name": "David Bunker",
+        "url": "https://github.com/dbunker"
+      },
+      {
+        "name": "demetriusnunes",
+        "url": "https://github.com/demetriusnunes"
+      },
+      {
+        "name": "DJCrabhat",
+        "url": "https://github.com/djcrabhat"
+      },
+      {
+        "name": "Domas Lasauskas",
+        "url": "https://github.com/domaslasauskas"
+      },
+      {
+        "name": "Echo Nolan",
+        "url": "https://github.com/enolan"
+      },
+      {
+        "name": "Egor Kislitsyn",
+        "url": "https://github.com/minibikini"
+      },
+      {
+        "name": "Elliott Spira",
+        "url": "https://github.com/em0ney"
+      },
+      {
+        "name": "Ethan Moistner",
+        "url": "https://github.com/emmoistner"
+      },
+      {
+        "name": "Francisco Guimarães",
+        "url": "https://github.com/franciscocpg"
+      },
+      {
+        "name": "Gabriel Verdi",
+        "url": "https://github.com/ansraliant"
+      },
+      {
+        "name": "Garun Vagidov",
+        "url": "https://github.com/garunski"
+      },
+      {
+        "name": "Gert Jansen van Rensburg",
+        "url": "https://github.com/gertjvr"
+      },
+      {
+        "name": "Guillaume Carbonneau",
+        "url": "https://github.com/guillaume"
+      },
+      {
+        "name": "Jarda Snajdr",
+        "url": "https://github.com/jsnajdr"
+      },
+      {
+        "name": "Jeff Hall",
+        "url": "https://github.com/electrikdevelopment"
+      },
+      {
+        "name": "jgilbert01",
+        "url": "https://github.com/jgilbert01"
+      },
+      {
+        "name": "John McKim",
+        "url": "https://github.com/johncmckim"
+      },
+      {
+        "name": "Jonas De Kegel",
+        "url": "https://github.com/jlsjonas"
+      },
+      {
+        "name": "Joost Farla",
+        "url": "https://github.com/joostfarla"
+      },
+      {
+        "name": "Joubert RedRat",
+        "url": "https://github.com/joubertredrat"
+      },
+      {
+        "name": "Kaj Wiklund",
+        "url": "https://github.com/kajwiklund"
+      },
+      {
+        "name": "Kiryl Yermakou",
+        "url": "https://github.com/rma4ok"
+      },
+      {
+        "name": "Leonardo Alifraco",
+        "url": "https://github.com/lalifraco-devspark"
+      },
+      {
+        "name": "Luke Chavers",
+        "url": "https://github.com/vmadman"
+      },
+      {
+        "name": "Marc Campbell",
+        "url": "https://github.com/marccampbell"
+      },
+      {
+        "name": "Mark Tse",
+        "url": "https://github.com/neverendingqs"
+      },
+      {
+        "name": "Martin Micunda",
+        "url": "https://github.com/martinmicunda"
+      },
+      {
+        "name": "Matt Hodgson",
+        "url": "https://github.com/mhodgson"
+      },
+      {
+        "name": "Matt Jonker",
+        "url": "https://github.com/msjonker"
+      },
+      {
+        "name": "Michael MacDonald",
+        "url": "https://github.com/mjmac"
+      },
+      {
+        "name": "Miso",
+        "url": "Mike"
+      },
+      {
+        "name": "Norimitsu Yamashita",
+        "url": "https://github.com/nori3tsu"
+      },
+      {
+        "name": "Oliv",
+        "url": "https://github.com/obearn"
+      },
+      {
+        "name": "Paul Esson",
+        "url": "https://github.com/thepont"
+      },
+      {
+        "name": "Paul Pasmanik",
+        "url": "https://github.com/ppasmanik"
+      },
+      {
+        "name": "Piotr Gasiorowski",
+        "url": "https://github.com/WooDzu"
+      },
+      {
+        "name": "polaris340",
+        "url": "https://github.com/polaris340"
+      },
+      {
+        "name": "Ramon Emilio Savinon",
+        "url": "https://github.com/vaberay"
+      },
+      {
+        "name": "Rob Brazier",
+        "url": "https://github.com/robbrazier"
+      },
+      {
+        "name": "Russell Schick",
+        "url": "https://github.com/rschick"
+      },
+      {
+        "name": "Ryan Zhang",
+        "url": "https://github.com/ryanzyy"
+      },
+      {
+        "name": "Shaun",
+        "url": "https://github.com/starsprung"
+      },
+      {
+        "name": "Shine Li",
+        "url": "https://github.com/shineli"
+      },
+      {
+        "name": "Stefan Siegl",
+        "url": "https://github.com/stesie"
+      },
+      {
+        "name": "Stewart Gleadow",
+        "url": "https://github.com/sgleadow"
+      },
+      {
+        "name": "Tuan Minh Huynh",
+        "url": "https://github.com/tuanmh"
+      },
+      {
+        "name": "Utku Turunc",
+        "url": "https://github.com/utkuturunc"
+      },
+      {
+        "name": "Vasiliy Solovey",
+        "url": "https://github.com/miltador"
+      },
+      {
+        "name": "Daniel Cottone",
+        "email": "daniel.cottone@gmail.com",
+        "url": "https://github.com/daniel-cottone"
+      },
+      {
+        "name": "Jaryd Carolin",
+        "url": "https://github.com/horyd"
+      }
+    ],
+    "license": "MIT",
+    "bugs": {
+      "url": "https://github.com/dherault/serverless-offline/issues"
+    },
+    "homepage": "https://github.com/dherault/serverless-offline",
+    "dependencies": {
+      "babel-register": "^6.18.0",
+      "boom": "^4.2.0",
+      "h2o2": "^5.4.0",
+      "hapi": "14.2.0",
+      "hapi-cors-headers": "^1.0.0",
+      "js-string-escape": "^1.0.1",
+      "jsonpath-plus": "^0.16.0",
+      "jsonwebtoken": "^7.4.3",
+      "lodash": "^4.17.4",
+      "uuid": "^3.2.1",
+      "velocityjs": "^0.9.3"
+    },
+    "devDependencies": {
+      "chai": "^3.5.0",
+      "dirty-chai": "^1.2.2",
+      "eslint": "^3.16.1",
+      "eslint-config-nelson": "^0.2.0",
+      "eslint-plugin-import": "^2.2.0",
+      "mocha": "^3.2.0",
+      "sinon": "^1.17.7"
+    },
+    "_registry": "npm",
+    "_loc": "/Users/mahdi.azarboon/Documents/dev-unsynced/optimization-practice/.yarn/v1/npm-serverless-offline-3.20.3-0b081e1a4f93b51c49f41299262c08c70594b2c5/package.json",
+    "readmeFilename": "README.md",
+    "readme": "# Serverless Offline Plugin\n\n[![serverless](http://public.serverless.com/badges/v3.svg)](http://www.serverless.com)\n[![npm version](https://badge.fury.io/js/serverless-offline.svg)](https://badge.fury.io/js/serverless-offline)\n[![Build Status](https://travis-ci.org/dherault/serverless-offline.svg?branch=master)](https://travis-ci.org/dherault/serverless-offline)\n[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](#contributing)\n\n# :sparkles: Announcement :sparkles:\n\nDear users and contributors,\n\nThank you for all your support. In the upcomming days my availability on this project should decline. This is why I'm **looking for maintainers**: anyone that pushed a successful PR and is willing to manage the upcomming ones is welcome to apply. To do so just comment on [this issue](https://github.com/dherault/serverless-offline/issues/304).\n\nThanks you for your attention. :)\n\n:wavy_dash::wavy_dash::wavy_dash:\n\nThis [Serverless](https://github.com/serverless/serverless) plugin emulates AWS λ and API Gateway on your local machine to speed up your development cycles.\nTo do so, it starts an HTTP server that handles the request's lifecycle like APIG does and invokes your handlers.\n\n**Features:**\n\n* Nodejs λ only.\n* Velocity templates support.\n* Lazy loading of your files with require cache invalidation: no need for a reloading tool like Nodemon.\n* And more: integrations, authorizers, proxies, timeouts, responseParameters, HTTPS, Babel runtime, CORS, etc...\n\nThis plugin is updated by its users, I just do maintenance and ensure that PRs are relevant to the community. In other words, if you [find a bug or want a new feature](https://github.com/dherault/serverless-offline/issues), please help us by becoming one of the [contributors](https://github.com/dherault/serverless-offline/graphs/contributors) :v: ! See the [contributing section](#contributing).\n\n## Documentation\n\n* [Installation](#installation)\n* [Usage and command line options](#usage-and-command-line-options)\n* [Usage with Babel](#usage-with-babel)\n* [Token authorizers](#token-authorizers)\n* [Custom authorizers](#custom-authorizers)\n* [AWS API Gateway features](#aws-api-gateway-features)\n* [Velocity nuances](#velocity-nuances)\n* [Debug process](#debug-process)\n* [Scoped execution](#scoped-execution)\n* [Simulation quality](#simulation-quality)\n* [Credits and inspiration](#credits-and-inspiration)\n* [Contributing](#contributing)\n* [License](#license)\n\n## Installation\n\nFor Serverless v1 only. See [this branch](https://github.com/dherault/serverless-offline/tree/serverless_0.5) for 0.5.x versions.\n\nFirst, add Serverless Offline to your project:\n\n`npm install serverless-offline --save-dev`\n\nThen inside your project's `serverless.yml` file add following entry to the plugins section: `serverless-offline`. If there is no plugin section you will need to add it to the file.\n\nIt should look something like this:\n\n```YAML\nplugins:\n  - serverless-offline\n```\n\nYou can check wether you have successfully installed the plugin by running the serverless command line:\n\n`serverless`\n\nthe console should display _Offline_ as one of the plugins now available in your Serverless project.\n\n## Usage and command line options\n\nIn your project root run:\n\n`serverless offline start` or `sls offline start`.\n\nto list all the options for the plugin run:\n\n`sls offline --help`\n\nAll CLI options are optional:\n\n```\n--prefix                -p  Adds a prefix to every path, to send your requests to http://localhost:3000/[prefix]/[your_path] instead. E.g. -p dev\n--location              -l  The root location of the handlers' files. Defaults to the current directory\n--host                  -o  Host name to listen on. Default: localhost\n--port                  -P  Port to listen on. Default: 3000\n--stage                 -s  The stage used to populate your templates. Default: the first stage found in your project.\n--region                -r  The region used to populate your templates. Default: the first region for the first stage found.\n--noTimeout             -t  Disables the timeout feature.\n--noEnvironment             Turns off loading of your environment variables from serverless.yml. Allows the usage of tools such as PM2 or docker-compose.\n--resourceRoutes            Turns on loading of your HTTP proxy settings from serverless.yml.\n--dontPrintOutput           Turns off logging of your lambda outputs in the terminal.\n--httpsProtocol         -H  To enable HTTPS, specify directory (relative to your cwd, typically your project dir) for both cert.pem and key.pem files.\n--skipCacheInvalidation -c  Tells the plugin to skip require cache invalidation. A script reloading tool like Nodemon might then be needed.\n--corsAllowOrigin           Used as default Access-Control-Allow-Origin header value for responses. Delimit multiple values with commas. Default: '*'\n--corsAllowHeaders          Used as default Access-Control-Allow-Headers header value for responses. Delimit multiple values with commas. Default: 'accept,content-type,x-api-key'\n--corsDisallowCredentials   When provided, the default Access-Control-Allow-Credentials header value will be passed as 'false'. Default: true\n--exec \"<script>\"           When provided, a shell script is executed when the server starts up, and the server will shut down after handling this command.\n--noAuth                    Turns off all authorizers\n```\n\nAny of the CLI options can be added to your `serverless.yml`. For example:\n\n```\ncustom:\n  serverless-offline:\n    httpsProtocol: \"dev-certs\"\n    port: 4000\n```\n\nOptions passed on the command line override YAML options.\n\nBy default you can send your requests to `http://localhost:3000/`. Please note that:\n\n* You'll need to restart the plugin if you modify your `serverless.yml` or any of the default velocity template files.\n* The event object passed to your λs has one extra key: `{ isOffline: true }`. Also, `process.env.IS_OFFLINE` is `true`.\n* When no Content-Type header is set on a request, API Gateway defaults to `application/json`, and so does the plugin.\n  But if you send an `application/x-www-form-urlencoded` or a `multipart/form-data` body with an `application/json` (or no) Content-Type, API Gateway won't parse your data (you'll get the ugly raw as input), whereas the plugin will answer 400 (malformed JSON).\n  Please consider explicitly setting your requests' Content-Type and using separate templates.\n\n## Usage with Babel\n\nYou can use Offline with [Serverless-runtime-babel](https://github.com/serverless/serverless-runtime-babel).\nTo do so you need to install (at least) the es2015 preset in your project folder (`npm i babel-preset-es2015 --save-dev`).\n\n~ Or ~\n\nYour λ handlers can be required with `babel-register`.\nTo do so, in your `serverless.yml` file, set options to be passed to babel-register like this:\n\n```yml\ncustom:\n  serverless-offline:\n    babelOptions:\n      presets: [\"es2015\", \"stage-2\"]\n```\n\nHere is the full list of [babel-register options](https://babeljs.io/docs/usage/require/)\n\n## Usage with Flow\n\nIf you're using [Flow](https://flow.org/en/) in your service, you'll need to update your `babelOptions` as mentioned [above](#usage-with-babel).\n\nEnsure that `babel-preset-flow` and `transform-flow-strip-types` are installed and properly configured in your project.\n\n```\nyarn add -D babel-preset-env babel-preset-flow babel-plugin-transform-runtime babel-plugin-transform-flow-strip-types\n```\n\nThen, in your `.babelrc`:\n\n```\n{\n  \"presets\": [\n    \"env\",\n    \"flow\"\n  ],\n  \"plugins\": [\n    \"transform-runtime\",\n    \"transform-flow-strip-types\"\n  ]\n}\n```\n\nSee the [docs](https://flow.org/en/docs/install/) for additional details on setting up Flow.\n\nFinally, add the `\"flow\"` preset to your `babelOptions`:\n\n```yml\ncustom:\n  serverless-offline:\n    babelOptions:\n      presets: [\"env\", \"flow\"]\n```\n\n## Token Authorizers\n\nAs defined in the [Serverless Documentation](https://serverless.com/framework/docs/providers/aws/events/apigateway/#setting-api-keys-for-your-rest-api) you can use API Keys as a simple authentication method.\n\nServerless-offline will emulate the behaviour of APIG and create a random token that's printed on the screen. With this token you can access your private methods adding `x-api-key: generatedToken` to your request header. All api keys will share the same token. To specify a custom token use the `--apiKey` cli option.\n\n## Custom authorizers\n\nOnly [custom authorizers](https://aws.amazon.com/blogs/compute/introducing-custom-authorizers-in-amazon-api-gateway/) are supported. Custom authorizers are executed before a Lambda function is executed and return an Error or a Policy document.\n\nThe Custom authorizer is passed an `event` object as below:\n\n```javascript\n{\n  \"type\": \"TOKEN\",\n  \"authorizationToken\": \"<Incoming bearer token>\",\n  \"methodArn\": \"arn:aws:execute-api:<Region id>:<Account id>:<API id>/<Stage>/<Method>/<Resource path>\"\n}\n```\n\nThe `methodArn` does not include the Account id or API id.\n\nThe plugin only supports retrieving Tokens from headers. You can configure the header as below:\n\n```javascript\n\"authorizer\": {\n  \"type\": \"TOKEN\",\n  \"identitySource\": \"method.request.header.Authorization\", // or method.request.header.SomeOtherHeader\n  \"authorizerResultTtlInSeconds\": \"0\"\n}\n```\n\n## AWS API Gateway Features\n\n### Velocity Templates\n\n[Serverless doc](https://serverless.com/framework/docs/providers/aws/events/apigateway#request-templates)\n~ [AWS doc](http://docs.aws.amazon.com/apigateway/latest/developerguide/models-mappings.html#models-mappings-mappings)\n\nYou can supply response and request templates for each function. This is optional. To do so you will have to place function specific template files in the same directory as your function file and add the .req.vm extension to the template filename.\nFor example,\nif your function is in code-file: `helloworld.js`,\nyour response template should be in file: `helloworld.res.vm` and your request template in file `helloworld.req.vm`.\n\n### CORS\n\n[Serverless doc](https://serverless.com/framework/docs/providers/aws/events/apigateway#enabling-cors)\n\nIf the endpoint config has CORS set to true, the plugin will use the CLI CORS options for the associated route.\nOtherwise, no CORS headers will be added.\n\n### Catch-all Path Variables\n\n[AWS doc](https://aws.amazon.com/blogs/aws/api-gateway-update-new-features-simplify-api-development/)\n\nSet greedy paths like `/store/{proxy+}` that will intercept requests made to `/store/list-products`, `/store/add-product`, etc...\n\n### ANY method\n\n[AWS doc](https://aws.amazon.com/blogs/aws/api-gateway-update-new-features-simplify-api-development/)\n\nWorks out of the box.\n\n### Lambda and Lambda Proxy Integrations\n\n[Serverless doc](https://serverless.com/framework/docs/providers/aws/events/apigateway#lambda-proxy-integration)\n~ [AWS doc](http://docs.aws.amazon.com/apigateway/latest/developerguide/api-gateway-create-api-as-simple-proxy-for-lambda.html)\n\nWorks out of the box. See examples in the manual_test directory.\n\n### HTTP Proxy\n\n[Serverless doc](https://serverless.com/framework/docs/providers/aws/events/apigateway#setting-an-http-proxy-on-api-gateway)\n~\n[AWS doc - AWS::ApiGateway::Method](http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-method.html)\n~\n[AWS doc - AWS::ApiGateway::Resource](http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-resource.html)\n\nExample of enabling proxy:\n\n```\ncustom:\n  serverless-offline:\n    resourceRoutes: true\n```\n\nor\n\n```\n    YourCloudFormationMethodId:\n      Type: AWS::ApiGateway::Method\n      Properties:\n        ......\n        Integration:\n          Type: HTTP_PROXY\n          Uri: 'https://s3-${self:custom.region}.amazonaws.com/${self:custom.yourBucketName}/{proxy}'\n          ......\n```\n\n```\ncustom:\n  serverless-offline:\n    resourceRoutes:\n      YourCloudFormationMethodId:\n        Uri: 'http://localhost:3001/assets/{proxy}'\n```\n\n### Response parameters\n\n[AWS doc](http://docs.aws.amazon.com/apigateway/latest/developerguide/request-response-data-mappings.html#mapping-response-parameters)\n\nYou can set your response's headers using ResponseParameters.\n\nMay not work properly. Please PR. (Difficulty: hard?)\n\nExample response velocity template:\n\n```javascript\n\"responseParameters\": {\n  \"method.response.header.X-Powered-By\": \"Serverless\", // a string\n  \"method.response.header.Warning\": \"integration.response.body\", // the whole response\n  \"method.response.header.Location\": \"integration.response.body.some.key\" // a pseudo JSON-path\n},\n```\n\n## Velocity nuances\n\nConsider this requestTemplate for a POST endpoint:\n\n```json\n\"application/json\": {\n  \"payload\": \"$input.json('$')\",\n  \"id_json\": \"$input.json('$.id')\",\n  \"id_path\": \"$input.path('$').id\"\n}\n```\n\nNow let's make a request with this body: `{ \"id\": 1 }`\n\nAWS parses the event as such:\n\n```javascript\n{\n  \"payload\": {\n    \"id\": 1\n  },\n  \"id_json\": 1,\n  \"id_path\": \"1\" // Notice the string\n}\n```\n\nWhereas Offline parses:\n\n```javascript\n{\n  \"payload\": {\n    \"id\": 1\n  },\n  \"id_json\": 1,\n  \"id_path\": 1, // Notice the number\n  \"isOffline\": true\n}\n```\n\nAccessing an attribute after using `$input.path` will return a string on AWS (expect strings like `\"1\"` or `\"true\"`) but not with Offline (`1` or `true`).\nYou may find other differences.\n\n## Debug process\n\nServerless offline plugin will respond to the overall framework settings and output additional information to the console in debug mode. In order to do this you will have to set the `SLS_DEBUG` environmental variable. You can run the following in the command line to switch to debug mode execution.\n\n> Unix: `export SLS_DEBUG=*`\n\n> Windows: `SET SLS_DEBUG=*`\n\nInteractive debugging is also possible for your project if you have installed the node-inspector module and chrome browser. You can then run the following command line inside your project's root.\n\nInitial installation:\n`npm install -g node-inspector`\n\nFor each debug run:\n`node-debug sls offline`\n\nThe system will start in wait status. This will also automatically start the chrome browser and wait for you to set breakpoints for inspection. Set the breakpoints as needed and, then, click the play button for the debugging to continue.\n\nDepending on the breakpoint, you may need to call the URL path for your function in seperate browser window for your serverless function to be run and made available for debugging.\n\n## Resource permissions and AWS profile\n\nLambda functions assume an IAM role during execution: the framework creates this role and set all the permission provided in the `iamRoleStatements` section of `serverless.yml`.\n\nHowever, serverless offline makes use of your local AWS profile credentials to run the lambda functions and that might result in a different set of permissions. By default, the aws-sdk would load credentials for you default AWS profile specified in your configuration file.\n\nYou can change this profile directly in the code or by setting proper environment variables. Setting the `AWS_PROFILE` environment variable before calling `serverless` offline to a different profile would effectively change the credentials, e.g.\n\n`AWS_PROFILE=<profile> serverless offline`\n\n## Scoped execution\n\nServerless offline plugin can invoke shell scripts when a simulated server has been started up for the purposes of integration testing. Downstream plugins may tie into the\n\"before:offline:start:end\" hook to release resources when the server is shutting down.\n\n`> sls offline start --exec \"./startIntegrationTests.sh\"`\n\n## Simulation quality\n\nThis plugin simulates API Gateway for many practical purposes, good enough for development - but is not a perfect simulator.\nSpecifically, Lambda currently runs on Node v4.3.2 and v6.10.0, whereas _Offline_ runs on your own runtime where no memory limits are enforced.\n\n## Usage with serverless-offline and serverless-webpack plugin\n\nRun `serverless offline start`. In comparison with `serverless offline`, the `start` command will fire an `init` and a `end` lifecycle hook which is needed for serverless-offline and serverless-dynamodb-local to switch off ressources.\n\nAdd plugins to your `serverless.yml` file:\n\n```yaml\nplugins:\n  - serverless-webpack\n  - serverless-dynamodb-local\n  - serverless-offline #serverless-offline needs to be last in the list\n```\n\n## Credits and inspiration\n\nThis plugin was initially a fork of [Nopik](https://github.com/Nopik/)'s [Serverless-serve](https://github.com/Nopik/serverless-serve).\n\n## Contributing\n\nYes, thank you!\nThis plugin is community-driven, most of its features are from different authors.\nPlease update the docs and tests and add your name to the package.json file.\nWe try to follow [Airbnb's JavaScript Style Guide](https://github.com/airbnb/javascript).\n\n## License\n\nMIT\n",
+    "licenseText": "The MIT License (MIT)\n\nCopyright (c) 2016-2017 David Hérault\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n"
+  },
+  "artifacts": [],
+  "remote": {
+    "resolved": "https://registry.yarnpkg.com/serverless-offline/-/serverless-offline-3.20.3.tgz#0b081e1a4f93b51c49f41299262c08c70594b2c5",
+    "type": "tarball",
+    "reference": "https://registry.yarnpkg.com/serverless-offline/-/serverless-offline-3.20.3.tgz",
+    "hash": "0b081e1a4f93b51c49f41299262c08c70594b2c5",
+    "registry": "npm",
+    "packageName": "serverless-offline"
+  },
+  "registry": "npm",
+  "hash": "0b081e1a4f93b51c49f41299262c08c70594b2c5"
+}

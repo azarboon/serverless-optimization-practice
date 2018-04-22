@@ -1,0 +1,41 @@
+{
+  "manifest": {
+    "name": "babel-plugin-minify-type-constructors",
+    "version": "0.3.0",
+    "description": "**Note:** Not recommended if full support for IE8 and lower is required. [Details](https://github.com/babel/minify/pull/45#discussion_r70181249)",
+    "keywords": [
+      "babel-plugin"
+    ],
+    "homepage": "https://github.com/babel/minify#readme",
+    "bugs": {
+      "url": "https://github.com/babel/minify/issues"
+    },
+    "license": "MIT",
+    "author": {
+      "name": "amasad"
+    },
+    "main": "lib/index.js",
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/babel/minify/tree/master/packages/babel-plugin-minify-type-constructors"
+    },
+    "dependencies": {
+      "babel-helper-is-void-0": "^0.3.0"
+    },
+    "_registry": "npm",
+    "_loc": "/Users/mahdi.azarboon/Documents/dev-unsynced/optimization-practice/.yarn/v1/npm-babel-plugin-minify-type-constructors-0.3.0-7f5a86ef322c4746364e3c591b8514eeafea6ad4/package.json",
+    "readmeFilename": "README.md",
+    "readme": "# babel-plugin-minify-type-constructors\n\n**Note:** Not recommended if full support for IE8 and lower is required. [Details](https://github.com/babel/minify/pull/45#discussion_r70181249)\n\n## Example\n\n**In**\n\n```javascript\nBoolean(x);\nNumber(x);\nString(x);\nArray(3);\nArray(3,1);\nObject({foo: 'bar'});\n```\n\n**Out**\n\n```javascript\n!!x;\n+x;\nx + \"\";\n[,,,];\n[3, 1];\n{foo: 'bar'};\n```\n\n## Installation\n\n```sh\nnpm install babel-plugin-minify-type-constructors\n```\n\n## Usage\n\n### Via `.babelrc` (Recommended)\n\n**.babelrc**\n\n```json\n{\n  \"plugins\": [\"minify-type-constructors\"]\n}\n```\n\n### Via CLI\n\n```sh\nbabel --plugins minify-type-constructors script.js\n```\n\n### Via Node API\n\n```javascript\nrequire(\"babel-core\").transform(\"code\", {\n  plugins: [\"minify-type-constructors\"]\n});\n```\n\n## Options\n\n+ `array` - prevent plugin from minifying arrays\n+ `boolean` - prevent plugin from minifying booleans\n+ `number` — prevent plugin from minifying numbers\n+ `object` — prevent plugin from minifying objects\n+ `string` — prevent plugin from minifying strings\n"
+  },
+  "artifacts": [],
+  "remote": {
+    "resolved": "https://registry.yarnpkg.com/babel-plugin-minify-type-constructors/-/babel-plugin-minify-type-constructors-0.3.0.tgz#7f5a86ef322c4746364e3c591b8514eeafea6ad4",
+    "type": "tarball",
+    "reference": "https://registry.yarnpkg.com/babel-plugin-minify-type-constructors/-/babel-plugin-minify-type-constructors-0.3.0.tgz",
+    "hash": "7f5a86ef322c4746364e3c591b8514eeafea6ad4",
+    "registry": "npm",
+    "packageName": "babel-plugin-minify-type-constructors"
+  },
+  "registry": "npm",
+  "hash": "7f5a86ef322c4746364e3c591b8514eeafea6ad4"
+}

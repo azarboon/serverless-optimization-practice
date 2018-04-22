@@ -1,0 +1,55 @@
+{
+  "manifest": {
+    "name": "hapi-cors-headers",
+    "description": "hapi extension to enable CORS",
+    "main": "index.js",
+    "scripts": {
+      "pretest": "standard",
+      "coverage": "tap --coverage-report=html",
+      "coverage:upload": "tap --coverage-report=text-lcov | coveralls",
+      "semantic-release": "semantic-release",
+      "test": "tap --100 --coverage tests"
+    },
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/gr2m/hapi-cors-headers.git"
+    },
+    "keywords": [
+      "hapi",
+      "cors",
+      "extension"
+    ],
+    "author": {
+      "name": "Gregor Martynus",
+      "email": "gregor@martynus.net"
+    },
+    "license": "MIT",
+    "bugs": {
+      "url": "https://github.com/gr2m/hapi-cors-headers/issues"
+    },
+    "homepage": "https://github.com/gr2m/hapi-cors-headers#readme",
+    "devDependencies": {
+      "coveralls": "^3.0.0",
+      "semantic-release": "^9.1.1",
+      "standard": "^10.0.3",
+      "tap": "^10.7.3"
+    },
+    "version": "1.0.3",
+    "_registry": "npm",
+    "_loc": "/Users/mahdi.azarboon/Documents/dev-unsynced/optimization-practice/.yarn/v1/npm-hapi-cors-headers-1.0.3-856b0a9870f435249492c5a52d2744317a8cc1fd/package.json",
+    "readmeFilename": "README.md",
+    "readme": "# hapi-cors-headers\n\n> hapi extension to enable CORS\n\n[![Build Status](https://travis-ci.org/gr2m/hapi-cors-headers.svg?branch=master)](https://travis-ci.org/gr2m/hapi-cors-headers)\n[![Coverage Status](https://coveralls.io/repos/gr2m/hapi-cors-headers/badge.svg?branch=master)](https://coveralls.io/r/gr2m/hapi-cors-headers?branch=master)\n[![Greenkeeper badge](https://badges.greenkeeper.io/gr2m/hapi-cors-headers.svg)](https://greenkeeper.io/)\n\nEnables [CORS](https://developer.mozilla.org/en-US/docs/Web/HTTP/Access_control_CORS) on\nall server response, securely from all origins, with `access-control-allow-credentials: true`.\n\n## Example\n\n```js\nvar Hapi = require('hapi')\nvar corsHeaders = require('hapi-cors-headers')\n\nvar server = new Hapi.Server()\n// setup routes etc ...\n\nserver.ext('onPreResponse', corsHeaders)\n```\n\n## Install\n\n```bash\nnpm install --save hapi-cors-headers\n```\n\n## Test\n\n[![devDependency Status](https://david-dm.org/gr2m/hapi-cors-headers/dev-status.svg)](https://david-dm.org/gr2m/hapi-cors-headers#info=devDependencies)\n\n```bash\nnpm test\n```\n\n## License\n\n[MIT](LICENSE.md)\n",
+    "licenseText": "Copyright (c) 2017 Gregor Martynus\n\nPermission is hereby granted, free of charge, to any person obtaining\na copy of this software and associated documentation files (the\n\"Software\"), to deal in the Software without restriction, including\nwithout limitation the rights to use, copy, modify, merge, publish,\ndistribute, sublicense, and/or sell copies of the Software, and to\npermit persons to whom the Software is furnished to do so, subject to\nthe following conditions:\n\nThe above copyright notice and this permission notice shall be\nincluded in all copies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND,\nEXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF\nMERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND\nNONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE\nLIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION\nOF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION\nWITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.\n"
+  },
+  "artifacts": [],
+  "remote": {
+    "resolved": "https://registry.yarnpkg.com/hapi-cors-headers/-/hapi-cors-headers-1.0.3.tgz#856b0a9870f435249492c5a52d2744317a8cc1fd",
+    "type": "tarball",
+    "reference": "https://registry.yarnpkg.com/hapi-cors-headers/-/hapi-cors-headers-1.0.3.tgz",
+    "hash": "856b0a9870f435249492c5a52d2744317a8cc1fd",
+    "registry": "npm",
+    "packageName": "hapi-cors-headers"
+  },
+  "registry": "npm",
+  "hash": "856b0a9870f435249492c5a52d2744317a8cc1fd"
+}

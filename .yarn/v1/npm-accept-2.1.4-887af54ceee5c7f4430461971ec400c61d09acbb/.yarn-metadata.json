@@ -1,0 +1,52 @@
+{
+  "manifest": {
+    "name": "accept",
+    "description": "HTTP Accept-* headers parsing",
+    "version": "2.1.4",
+    "repository": {
+      "type": "git",
+      "url": "git://github.com/hapijs/accept"
+    },
+    "main": "lib/index.js",
+    "keywords": [
+      "HTTP",
+      "header",
+      "accept",
+      "accept-encoding"
+    ],
+    "engines": {
+      "node": ">=4.0.0"
+    },
+    "dependencies": {
+      "boom": "5.x.x",
+      "hoek": "4.x.x"
+    },
+    "devDependencies": {
+      "code": "4.x.x",
+      "lab": "13.x.x",
+      "npmignore": "0.2.x"
+    },
+    "scripts": {
+      "test": "lab -a code -t 100 -L",
+      "test-cov-html": "lab -a code -r html -o coverage.html",
+      "update-npmignore": "npmignore"
+    },
+    "license": "BSD-3-Clause",
+    "_registry": "npm",
+    "_loc": "/Users/mahdi.azarboon/Documents/dev-unsynced/optimization-practice/.yarn/v1/npm-accept-2.1.4-887af54ceee5c7f4430461971ec400c61d09acbb/package.json",
+    "readmeFilename": "README.md",
+    "readme": "#Accept\n\nHTTP Accept-* headers parsing.\n\n[![npm version](https://badge.fury.io/js/accept.svg)](http://badge.fury.io/js/accept) [![Build Status](https://secure.travis-ci.org/hapijs/accept.png)](http://travis-ci.org/hapijs/accept) [![Dependency Status](https://david-dm.org/hapijs/accept.svg)](https://david-dm.org/hapijs/accept)\n\nLead Maintainer - [Mark Bradshaw](https://github.com/mark-bradshaw)\n\n## Introduction\n\nAccept helps to answer the question of how best to respond to a HTTP request, based on the requesting browser's capabilities.  Accept will parse the headers of a HTTP request and tell you what the preferred encoding is, what language should be used, and what charsets and media types are accepted.\n\nAdditional details about Accept headers and content negotiation can be found in [IETF RFC 7231, Section 5.3](https://tools.ietf.org/html/rfc7231#section-5.3).\n\n## API\n\nFor information on using Accept see the [API documentation](API.md).\n",
+    "licenseText": "Copyright (c) 2014-2017, Project contributors.\nCopyright (c) 2015-2016, Mark Bradshaw\nCopyright (c) 2014, Walmart.\nAll rights reserved.\n\nRedistribution and use in source and binary forms, with or without\nmodification, are permitted provided that the following conditions are met:\n    * Redistributions of source code must retain the above copyright\n      notice, this list of conditions and the following disclaimer.\n    * Redistributions in binary form must reproduce the above copyright\n      notice, this list of conditions and the following disclaimer in the\n      documentation and/or other materials provided with the distribution.\n    * The names of any contributors may not be used to endorse or promote\n      products derived from this software without specific prior written\n      permission.\n\nTHIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS \"AS IS\" AND\nANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED\nWARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE\nDISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDERS AND CONTRIBUTORS BE LIABLE FOR ANY\nDIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES\n(INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;\nLOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND\nON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT\n(INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS\nSOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.\n\n                                  *   *   *\n\nThe complete list of contributors can be found at: https://github.com/hapijs/accept/graphs/contributors\n\n\n"
+  },
+  "artifacts": [],
+  "remote": {
+    "resolved": "https://registry.yarnpkg.com/accept/-/accept-2.1.4.tgz#887af54ceee5c7f4430461971ec400c61d09acbb",
+    "type": "tarball",
+    "reference": "https://registry.yarnpkg.com/accept/-/accept-2.1.4.tgz",
+    "hash": "887af54ceee5c7f4430461971ec400c61d09acbb",
+    "registry": "npm",
+    "packageName": "accept"
+  },
+  "registry": "npm",
+  "hash": "887af54ceee5c7f4430461971ec400c61d09acbb"
+}

@@ -1,0 +1,55 @@
+{
+  "manifest": {
+    "name": "subtext",
+    "description": "HTTP payload parsing",
+    "version": "4.4.1",
+    "repository": {
+      "type": "git",
+      "url": "git://github.com/hapijs/subtext"
+    },
+    "main": "lib/index.js",
+    "keywords": [
+      "http",
+      "payload",
+      "file",
+      "stream",
+      "multipart"
+    ],
+    "engines": {
+      "node": ">=4.0.0"
+    },
+    "dependencies": {
+      "boom": "5.x.x",
+      "content": "3.x.x",
+      "hoek": "4.x.x",
+      "pez": "2.x.x",
+      "wreck": "12.x.x"
+    },
+    "devDependencies": {
+      "code": "4.x.x",
+      "form-data": "2.1.x",
+      "lab": "13.x.x"
+    },
+    "scripts": {
+      "test": "lab -a code -t 100 -L",
+      "test-cov-html": "lab -a code -r html -o coverage.html"
+    },
+    "license": "BSD-3-Clause",
+    "_registry": "npm",
+    "_loc": "/Users/mahdi.azarboon/Documents/dev-unsynced/optimization-practice/.yarn/v1/npm-subtext-4.4.1-2fcec945de429283c3d18b151ff0fa1f1b87aec9/package.json",
+    "readmeFilename": "README.md",
+    "readme": "#subtext\n\nHTTP payload parser.\n\n[![Build Status](https://secure.travis-ci.org/hapijs/subtext.svg?branch=master)](http://travis-ci.org/hapijs/subtext)\n\nLead Maintainer: [John Brett](https://github.com/johnbrett)\n\n**subtext** is sponsored by [Sponsorama](http://www.sponsorama.io).\n\nsubtext parses the request body and exposes it in a callback.\n\n## Example\n\n```javascript\nconst Http = require('http');\nconst Subtext = require('subtext');\n\nHttp.createServer((request, response) => {\n\n    Subtext.parse(request, null, { parse: true, output: 'data' }, (err, parsed) => {\n\n        response.writeHead(200, { 'Content-Type': 'text/plain' });\n        response.end('Payload contains: ' + parsed.payload.toString());\n    });\n\n}).listen(1337, '127.0.0.1');\n\nconsole.log('Server running at http://127.0.0.1:1337/');\n\n```\n\n## API\n\nSee the [API Reference](API.md)\n\n\n### Warning for subtext on Node below v4.3.2\n\nA Node bug in versions below Node v4.3.2 meant that the `Buffer.byteLength` function did not work correctly, and as such, using `maxBytes` options with multipart payloads will mistake the file buffer size to be incorrectly as bigger than it is. Your options here are either to upgrade to Node version greater than v4.3.2 or increase maxBytes to allow some error in calculation. [Background info in this issue here](https://github.com/hapijs/subtext/pull/32).\n",
+    "licenseText": "Copyright (c) 2012-2017, Project contributors\nCopyright (c) 2012-2014, Walmart\nAll rights reserved.\n\nRedistribution and use in source and binary forms, with or without\nmodification, are permitted provided that the following conditions are met:\n    * Redistributions of source code must retain the above copyright\n      notice, this list of conditions and the following disclaimer.\n    * Redistributions in binary form must reproduce the above copyright\n      notice, this list of conditions and the following disclaimer in the\n      documentation and/or other materials provided with the distribution.\n    * The names of any contributors may not be used to endorse or promote\n      products derived from this software without specific prior written\n      permission.\n\nTHIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS \"AS IS\" AND\nANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED\nWARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE\nDISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDERS AND CONTRIBUTORS BE LIABLE FOR ANY\nDIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES\n(INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;\nLOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND\nON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT\n(INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS\nSOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.\n\n                                  *   *   *\n\nThe complete list of contributors can be found at: https://github.com/hapijs/subtext/graphs/contributors\n"
+  },
+  "artifacts": [],
+  "remote": {
+    "resolved": "https://registry.yarnpkg.com/subtext/-/subtext-4.4.1.tgz#2fcec945de429283c3d18b151ff0fa1f1b87aec9",
+    "type": "tarball",
+    "reference": "https://registry.yarnpkg.com/subtext/-/subtext-4.4.1.tgz",
+    "hash": "2fcec945de429283c3d18b151ff0fa1f1b87aec9",
+    "registry": "npm",
+    "packageName": "subtext"
+  },
+  "registry": "npm",
+  "hash": "2fcec945de429283c3d18b151ff0fa1f1b87aec9"
+}
